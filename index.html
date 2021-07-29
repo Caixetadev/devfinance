@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Dev.finance$</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header_content container">
+      <img src="/assets/logo.svg" alt="Logo Dev Finance">
+      <div class="toggle">
+        <input id="switch" type="checkbox" name="theme">
+        <label for="switch">Toggle</label>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="balance">
+      <h2 class="sr-only">Balanço</h2>
+
+      <div class="card">
+        <h3>
+          <spam>Entradas</spam>
+          <img src="/assets/income.svg" alt="Imagem de Entradas">
+        </h3>
+        <p>R$ 5.000,00</p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <span>Saídas</span>
+          <img src="/assets/expense.svg" alt="Imagem de Saídas">
+        </h3>
+        <p>R$ 2.000,00</p>
+      </div>
+
+      <div class="card total">
+        <h3>
+          <span>Total</span>
+          <img src="/assets/total.svg" alt="Imagem Total">
+        </h3>
+        <p>R$ 3.000,00</p>
+      </div>
+
+    </section>
+
+    <section id="transaction">
+      <h2 class="sr-only">Transação</h2>
+
+      <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
+
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="description">Luz</td>
+            <td class="expense">- R$ 500,00</td>
+            <td class="date">23/01/2022</td>
+            <td>
+              <img src="/assets/minus.svg" alt="Remover Transação">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="description">Criação website</td>
+            <td class="income">R$ 5.000,00</td>
+            <td class="date">23/01/2022</td>
+            <td>
+              <img src="/assets/plus.svg" alt="">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="description">Internet</td>
+            <td class="expense">- R$ 200,00</td>
+            <td class="date">23/01/2022</td>
+            <td>
+              <img src="/assets/minus.svg" alt="Remover Transação">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <div id="form">
+        <h2>Nova Transação</h2>
+        <form action="">
+          <div class="input-group">
+            <label class="sr-only" for="description">Descrição</label>
+            <input type="text" name="description" id="description" placeholder="Descrição">
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="amount">Valor</label>
+            <input type="number" name="amount" id="amount" placeholder="0,00" step="0.01">
+            <small class="help">Use o sinal "-" (negativo) para despesa e "," (vírgula) para casas decimais</small>
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="date">Data</label>
+            <input type="date" name="date" id="date">
+          </div>
+
+          <div class="input-group actions">
+            <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+            <button>Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <a href="https://github.com/Caixetadev" target="_blank"><img src="/assets/github.svg" class="github" alt=""></a>
+    <a href="https://www.linkedin.com/in/rafael-caixeta-05402b217/" target="_blank"><img src="/assets/linkedin.svg"
+        class="linkedin" alt=""></a>
+    <a href="https://www.instagram.com/omg_its_caixeta/" target="_blank" class="instagram"><img
+        src="/assets/instagram.svg" alt=""></a>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
