@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Dev.finance$</title>
 </head>
 
@@ -29,7 +30,7 @@
           <spam>Entradas</spam>
           <img src="/assets/income.svg" alt="Imagem de Entradas">
         </h3>
-        <p>R$ 5.000,00</p>
+        <p id="incomeDisplay">R$ 0,00</p>
       </div>
 
       <div class="card">
@@ -37,7 +38,7 @@
           <span>Saídas</span>
           <img src="/assets/expense.svg" alt="Imagem de Saídas">
         </h3>
-        <p>R$ 2.000,00</p>
+        <p id="expenseDisplay">R$ 0,00</p>
       </div>
 
       <div class="card total">
@@ -45,7 +46,7 @@
           <span>Total</span>
           <img src="/assets/total.svg" alt="Imagem Total">
         </h3>
-        <p>R$ 3.000,00</p>
+        <p id="totalDisplay">R$ 0,00</p>
       </div>
 
     </section>
@@ -65,32 +66,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="description">Luz</td>
-            <td class="expense">- R$ 500,00</td>
-            <td class="date">23/01/2022</td>
-            <td>
-              <img src="/assets/minus.svg" alt="Remover Transação">
-            </td>
-          </tr>
 
-          <tr>
-            <td class="description">Criação website</td>
-            <td class="income">R$ 5.000,00</td>
-            <td class="date">23/01/2022</td>
-            <td>
-              <img src="/assets/plus.svg" alt="">
-            </td>
-          </tr>
-
-          <tr>
-            <td class="description">Internet</td>
-            <td class="expense">- R$ 200,00</td>
-            <td class="date">23/01/2022</td>
-            <td>
-              <img src="/assets/minus.svg" alt="Remover Transação">
-            </td>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -100,7 +76,7 @@
     <div class="modal">
       <div id="form">
         <h2>Nova Transação</h2>
-        <form action="">
+        <form action="" onsubmit="Form.submit(event)">
           <div class="input-group">
             <label class="sr-only" for="description">Descrição</label>
             <input type="text" name="description" id="description" placeholder="Descrição">
@@ -127,11 +103,11 @@
   </div>
 
   <footer id="footer">
-    <a href="https://github.com/Caixetadev" target="_blank"><img src="/assets/github.svg" class="github" alt=""></a>
-    <a href="https://www.linkedin.com/in/rafael-caixeta-05402b217/" target="_blank"><img src="/assets/linkedin.svg"
-        class="linkedin" alt=""></a>
-    <a href="https://www.instagram.com/omg_its_caixeta/" target="_blank" class="instagram"><img
-        src="/assets/instagram.svg" alt=""></a>
+    <a href="https://github.com/Caixetadev" target="_blank"><i class="fa fa-github" style="font-size: 35px;"></i></a>
+    <a href="https://www.linkedin.com/in/rafael-caixeta-05402b217/" target="_blank">
+      <i class="fa fa-linkedin" style="font-size: 35px;"></i></a>
+    <a href="https://www.instagram.com/caixetadev/" target="_blank"><i class="fa fa-instagram"
+        style="font-size: 35px"></i></a>
   </footer>
 
   <script src="/js/main.js"></script>

@@ -79,6 +79,10 @@ button {
   transition: 0.5s;
 }
 
+.fa:hover {
+  color: var(--dark-green);
+}
+
 button:hover,
 button:focus {
   background: var(--green);
@@ -109,6 +113,11 @@ button:focus {
   opacity: 1;
   transform: translateX(5px) scale(1.2);
 }
+
+.fa {
+  color: white;
+}
+
 /* =============== Header =============== */
 .header-bg {
   background: url("https://cdn.pixabay.com/photo/2014/10/23/10/10/dollars-499481_960_720.jpg");
@@ -319,7 +328,6 @@ input {
 .container-2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 input[type="checkbox"] {
