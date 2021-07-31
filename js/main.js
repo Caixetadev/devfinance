@@ -74,7 +74,6 @@ const DOM = {
   transactionsContainer: document.querySelector("#data-table tbody"),
 
   addTransaction(transaction, index) {
-    console.log(transaction)
     const tr = document.createElement("tr")
     tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
     tr.dataset.index = index 
@@ -91,7 +90,7 @@ const DOM = {
       <td class="${CSSclass}">${amount}</td>
       <td class="date">${transaction.date}</td>
       <td>
-        <img onclick ="Transaction.remove(${index})" src="../assets/minus.svg" alt="Remover Transação">
+        <img onclick ="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover Transação">
       </td>
     `
     return html
