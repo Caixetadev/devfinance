@@ -1,7 +1,7 @@
 <h1 align = "center"> Devfinance💲</h1>
-<p align = "center"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/carolfons/devfinances">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/carolfons/devfinances?color=black">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/carolfons/devfinances?color=green">
+<p align = "center"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/caixetadev/dev-finance">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/caixetadev/dev-finance?color=black">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/caixetadev/dev-finance?color=green">
   
   ---
   
