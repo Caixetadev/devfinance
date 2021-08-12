@@ -34,6 +34,6 @@
 <p align = "center"><img alt="GitHub" src="https://img.shields.io/github/license/carolfons/devfinances"></p>
 
 ---
-<p align = "center"> Desenvolvido por <b>Rafael Caixeta</b></p>
+<p align = "center"> Desenvolvido por <table> <tr Style display inline-block> <td align="center"> <a href="https://github.com/Caixetadev"> <img src="https://avatars.githubusercontent.com/u/87894998?v=4" width="100px;" alt="Foto do Caixeta no GitHub"/><br> <sub> <b>Caixetadev</b> </sub> </a> </td> </table></p>
 
 ---
